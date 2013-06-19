@@ -22,6 +22,7 @@ Usage
 -----
 
 ::
+
     >>> left_br = 'root(node1_1,node1_2(node2_1,node2_2,node2_3))'
     >>> br = BracketRepresentation(left_br)
     >>> b.get_children('node1_2')
