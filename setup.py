@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
-from distutils.core import setup
+from setuptools import setup, find_packages
+from os.path import join, dirname
 
 setup(
     name='bracket_representation',
@@ -9,5 +10,5 @@ setup(
     author='Eugena Mihailikova',
     author_email='eugena@inbox.ru',
     url='https://github.com/eugena/bracket_representation',
-    packages=['bracket_representation', ],
-    package_dir={'bracket_representation': 'src/bracket-representation'},)
+    packages=find_packages(),
+    long_description=open(join(dirname(__file__), 'README.rst')).read(),)
